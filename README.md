@@ -1,4 +1,4 @@
-# Frontend Development Tasks – [Your Organization/Project Name]
+# Frontend Development Tasks – [My Github Repo for all the **Tasks** I've completed in my One-month Remote Internship At SaiKet Systems]
 
 This repository contains a collection of my frontend development tasks completed during my time at **SaiKet Systems** as a **Frontend Web Developer [Intern]**. These tasks cover a variety of fundamental to intermediate web development tasks using **HTML**, **CSS**, and **JavaScript**.
 
