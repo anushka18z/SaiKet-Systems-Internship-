@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Delivery Services</title>
+  <style>
+    /* CSS styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-areas: 
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+      grid-template-columns: 1fr;
+      background: #f4f7f9;
+      color: #333;
+    }
+
+    header {
+      grid-area: header;
+      background: #d35400;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    aside {
+      grid-area: sidebar;
+      background: #ffe6cc;
+      padding: 1.2rem;
+    }
+
+    aside ul {
+      list-style: none;
+    }
+
+    aside ul li {
+      margin: 1rem 0;
+    }
+
+    aside ul li a {
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
+    }
+
+    aside ul li a:hover {
+      color: #e67e22;
+    }
+
+    main {
+      grid-area: main;
+      padding: 1.5rem;
+      background: #fff;
+    }
+
+    main h2 {
+      color: #d35400;
+      margin-bottom: 1rem;
+    }
+
+    main img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      grid-area: footer;
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      display: inline-block;
+      margin: 0 15px;
+      font-size: 0.85rem;
+    }
+
+    /* Media Queries */
+
+    /* Tablet and above */
+    @media (min-width: 768px) {
+      body {
+        grid-template-areas: 
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-template-columns: 220px 1fr;
+      }
+
+      aside {
+        min-height: 100vh;
+      }
+    }
+
+    /* Large screens / desktops */
+    @media (min-width: 1024px) {
+      header {
+        text-align: left;
+        padding: 1.5rem 2rem;
+      }
+
+      main {
+        padding: 2rem 3rem;
+      }
+    }
+
+    /* Small mobile (extra responsive tweaks) */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      main h2 {
+        font-size: 1.2rem;
+      }
+
+      aside ul li {
+        margin: 0.6rem 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shree Home Delivery</h1>
+    <p>Fast, Fresh, and Right to Your Door</p>
+  </header>
+
+  <aside>
+    <ul>
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#about">ℹ️ About Us</a></li>
+      <li><a href="#services">📦 Our Services</a></li>
+      <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <h2 id="home">Welcome to Swift Delivery</h2>
+    <p>We bring your food, groceries, and essentials straight to your doorstep. With quick delivery and affordable pricing, we ensure your daily needs are just one tap away.</p>
+
+    <img src="https://img.freepik.com/free-photo/delivery-concept-handsome-african-american-delivery-man-carrying-cardboard-boxes_1258-26898.jpg" alt="Delivery Service"/>
+
+    <h3 id="about">About Us</h3>
+    <p>Swift Home Delivery is your trusted partner for on-time deliveries. From hot meals to essential goods, our priority is making life easier for our customers.</p>
+
+    <h3 id="services">Our Services</h3>
+    <ul>
+      <li>🍔 Food Delivery – Restaurants and Fast Food</li>
+      <li>🛍 Grocery Delivery – Fresh and Daily Essentials</li>
+      <li>🍱 Gharguti Tiffin Delivery - Fresh food for pg , hostelers </li>
+      <li>💊 Medicine Delivery – Urgent health essentials</li>
+    </ul>
+
+    <h3 id="contact">Contact Us</h3>
+    <p>Email: support@shree_homedelivery.com</p>
+    <p>Phone: +91-98765-43210</p>
+  </main>
+
+  <footer>
+    <ul>
+      <li>© 2025 Shree Home Delivery Services</li>
+      <li>All Rights Reserved</li>
+      <li>Made for educational internship purpose only 2025</li>
+    </ul>
+  </footer>
+</body>
+</html>

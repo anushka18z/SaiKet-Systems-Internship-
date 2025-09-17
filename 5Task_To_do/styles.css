@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f2a7c4;
+  background: radial-gradient(circle, rgba(242, 167, 196, 1) 0%, rgba(148, 187, 233, 1) 39%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.21);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #23699a;
+  margin-bottom: 1.2rem;
+}
+
+.input-section {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 2px solid #62b6cb;
+  border-radius: 7px;
+  outline: none;
+  font-size: 1rem;
+}
+
+#add-btn {
+  background: #e36414;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+#add-btn:hover {
+  background: #23699a;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background: #f6f9fa;
+  border-radius: 7px;
+  margin-bottom: 11px;
+  padding: 0.7rem 1rem;
+  transition: background 0.2s;
+}
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.edit-btn, .delete-btn , .mark-btn{
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 9px;
+  font-size: 1rem;
+  color: #e36414;
+  transition: color 0.2s;
+}
+.edit-btn:hover, .delete-btn:hover , .mark-btn:hover{
+  color: #23699a;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+    max-width: 95vw;
+  }
+  .input-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
