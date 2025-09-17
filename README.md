@@ -63,4 +63,6 @@ This repository contains a collection of my frontend development tasks completed
 ---
 
 ## 📂 How to Run
-1. Clone the repo:
+1. cd path/to/your-folder
+2. Clone the repo: git clone https://github.com/anushka18z/SaiKet-Systems-Internship-.git
+3. cd your-repo-name
